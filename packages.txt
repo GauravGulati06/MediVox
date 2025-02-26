@@ -1,0 +1,11 @@
+python3-dev
+portaudio19-dev
+python3-pyaudio
+ffmpeg
+libsndfile1
+build-essential
+pkg-config
+git
+libasound2-dev
+python3-all-dev
+libportaudio2 

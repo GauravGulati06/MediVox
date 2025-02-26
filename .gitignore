@@ -1,0 +1,23 @@
+# Environment
+.env
+medenv/
+venv/
+__pycache__/
+
+# Generated files
+*.pyc
+*.mp3
+*.wav
+*.jpg
+download.jpg
+Temp.mp3
+final.mp3
+patient_voice.mp3
+
+# Large files
+medical.pdf
+vectorstore/
+
+# IDE
+.vscode/
+.idea/ 
