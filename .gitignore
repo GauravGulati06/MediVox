@@ -10,7 +10,7 @@ __pycache__/
 *.wav
 *.jpg
 download.jpg
-Temp.mp3
+output_audio.mp3
 final.mp3
 patient_voice.mp3
 

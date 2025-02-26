@@ -130,9 +130,11 @@ def process_inputs(audio_filepath, image_filepath):
     else:
         doctor_response = "No image provided for me to analyze"
 
-    voice_of_doctor = text_to_speech_with_elevenlabs(input_text=doctor_response, output_filepath="final.mp3") 
+    # Generate audio response and return the filepath
+    output_filepath = "output_audio.mp3"
+    voice_of_doctor = text_to_speech_with_elevenlabs(input_text=doctor_response, output_filepath=output_filepath)
 
-    return speech_to_text_output, doctor_response, voice_of_doctor
+    return speech_to_text_output, doctor_response, output_filepath
 
 
 # Create the interface
@@ -145,7 +147,7 @@ iface = gr.Interface(
     outputs=[
         gr.Textbox(label="Speech to Text"),
         gr.Textbox(label="Doctor's Response"),
-        gr.Audio("Temp.mp3")
+        gr.Audio(label="Doctor's Voice")
     ],
     title="AI Doctor with Vision and Voice"
 )
