@@ -34,7 +34,7 @@ class SentenceTransformerEmbeddings(Embeddings):
         return embedding.tolist()
 
 embeddings = SentenceTransformerEmbeddings(
-    model_name="sentence-transformers/all-mpnet-base-v2",
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
     device=device
 )
 
@@ -53,8 +53,8 @@ if not (vectorstore_path / "index.faiss").exists():
     
     # Split documents into chunks
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
+        chunk_size=2000,
+        chunk_overlap=100,
         length_function=len,
     )
     texts = text_splitter.split_documents(documents)
