@@ -1,14 +1,3 @@
----
-title: MediVox - AI Doctor with Vision and Voice
-emoji: 👨‍⚕️
-colorFrom: blue
-colorTo: purple
-sdk: gradio
-sdk_version: 4.16.0
-app_file: app.py
-pinned: false
----
-
 # AI Doctor with Vision and Voice
 
 This is an AI-powered medical assistant that can:
@@ -41,18 +30,18 @@ ELEVENLABS_API_KEY=your_elevenlabs_api_key
 
 ## Model Details
 
-- Vision Model: LLaVA 3.2 11B
+- Vision Model: LLaVA 3.2 90B
 - Speech-to-Text: Whisper Large V3
 - Text Generation: Groq
 - Voice Generation: ElevenLabs
-- Embeddings: sentence-transformers/all-mpnet-base-v2
+- Embeddings: sentence-transformers/all-MiniLM-L6-v2
 
 ## Citation
 
 If you use this space, please cite:
 ```
 @misc{medivoicebot2024,
-  author = {Your Name},
+  author = {Gaurav Gulati},
   title = {AI Doctor with Vision and Voice},
   year = {2024},
   publisher = {Hugging Face Spaces},
