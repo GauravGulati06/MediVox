@@ -5,7 +5,6 @@ langchain
 langchain-core
 langchain-community
 sentence-transformers
-chromadb
 PyPDF2
 transformers
 torch
