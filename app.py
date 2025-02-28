@@ -149,7 +149,8 @@ iface = gr.Interface(
         gr.Textbox(label="Doctor's Response"),
         gr.Audio(label="Doctor's Voice")
     ],
-    title="AI Doctor with Vision and Voice"
+    title="MediVox : AI Doctor with Vision and Voice"
+    css=".gradio-container {text-align: center;}"
 )
 
 iface.launch(debug=True)
